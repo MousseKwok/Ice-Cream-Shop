@@ -45,10 +45,9 @@ public class IceCreamConeView extends JComponent{
 	 * @param g for Graphics object
 	 */
 	private void paintCone(Graphics g) {
-		//int array of x coordinates of the points
+		
 		int[] xPoints = {getWidth()/2, (getWidth()-CONE_WIDTH)/2, (getWidth()-CONE_WIDTH)/2+CONE_WIDTH};
 		
-		//int array of y coordinates of the points
 		int[] yPoints = {getHeight(), getHeight() - CONE_HEIGHT, getHeight() - CONE_HEIGHT};
 		g.setColor(new Color(240,220,130));
 		g.fillPolygon(xPoints, yPoints, 3);
@@ -73,20 +72,24 @@ public class IceCreamConeView extends JComponent{
 	 * @param g for Graphics object
 	 */
 	private void paintScoops(Graphics g) {
+		
 		//Current y coordinate of the scoop
 		int currentY = getHeight() - CONE_HEIGHT - SCOOP_DIAMETER + SCOOP_OVERLAP;
+		
 		while(!cone.getScoopFlavorStack().isEmpty()) {
+			
 			//Push top scoop of the original stack to the temporary stack
 			tempStack.push(cone.getScoopFlavorStack().peek());
-			//Pop the scoop
+			
 			cone.getScoopFlavorStack().pop();
 		}
 		
 		while(!tempStack.isEmpty()) {
+			
 			paintScoop(g, tempStack.peek(), (getWidth()-SCOOP_DIAMETER)/2, currentY);
-			//push the top scoop of the temporary stack to the original stack
+			
 			cone.getScoopFlavorStack().push(tempStack.peek());
-			//Pop the scoop
+			
 			tempStack.pop();
 			
 			//Update y coordinate of the next scoop
