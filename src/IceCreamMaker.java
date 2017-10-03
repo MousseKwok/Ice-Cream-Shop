@@ -87,7 +87,7 @@ public class IceCreamMaker extends JPanel implements ActionListener
 	 * implements activities related to JButtons
 	 */
 	public void actionPerformed(ActionEvent e) {
-		//Decide which button we are interacting with
+		
 		JButton src = (JButton) e.getSource();
 
 		for(int i = 0; i < flavorBtns.length; i++) {
