@@ -137,14 +137,12 @@ public class IceCreamShop extends JPanel implements ActionListener{
 		Stack<Integer> makerStack = maker.cone.getScoopFlavorStack();
 		Stack<Integer> lineStack = line.getOrder().getScoopFlavorStack();
 		
-		//Compare the size of the two stacks. If the sizes are not the same, return false
 		if(makerStack.size() != lineStack.size()) {
 			return false;
 		}
 		
-		//If the stacks are not empty
 		while(!lineStack.isEmpty()) {
-			//Implement pop. If the two popped scoop are not the same, return false
+			
 			if(makerStack.pop() != lineStack.pop()) {
 				return false;
 			}
