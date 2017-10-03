@@ -36,14 +36,13 @@ public class IceCreamLine extends Box {
 	 */
 	public void addRandomOrder() {
 		IceCreamCone cone = IceCreamCone.createRandom();
-		//Enqueue the ice cream cone to the OrderLine queue
+
 		orderLine.enqueue(cone);
 
 		IceCreamConeView coneView = new IceCreamConeView(cone);
-		//Enqueue the cone view
+	
 		orderLineView.enqueue(coneView);
 		
-		//Add the ice cream cone view to the frame
 		add(coneView);
 	}
 	
