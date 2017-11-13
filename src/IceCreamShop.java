@@ -117,14 +117,12 @@ public class IceCreamShop extends JPanel implements ActionListener{
 		if(matches()) {
 			//Increase score by 10
 			score += CORRECT_MATCH_SCORE;
-			scoreLabel.setText("Score : " + score);
-			
 		}
 		else {
 			//Decrease score by 5
 			score -= INCORRECT_MATCH_SCORE;
-			scoreLabel.setText("Score :" + score);
 		}
+		scoreLabel.setText("Score : " + score);
 	}
 	
 	/**
