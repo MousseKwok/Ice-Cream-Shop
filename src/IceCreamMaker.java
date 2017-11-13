@@ -95,19 +95,17 @@ public class IceCreamMaker extends JPanel implements ActionListener
 				cone.addScoop(IceCreamCone.FLAVORS[i]);
 			}
 		}
-		repaint();
 		
 		if(src == trashButton) {
 			//Delete the top scoop
 			cone.popTopScoop();
-			repaint();
 		}
 
 		else if(src == randomButton) {
 			//Add the random flavor scoop
 			cone.addScoop();
-			repaint();
 		}
+		repaint();
 	}
 	
 }
