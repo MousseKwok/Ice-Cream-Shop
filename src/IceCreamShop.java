@@ -94,8 +94,6 @@ public class IceCreamShop extends JPanel implements ActionListener{
 	    if(src == addRandom) {
 	    	//Add a random order
 	    	line.addRandomOrder();
-	    	validate();
-	    	repaint();
 	    }
 	    
 	   else if(src == serveNext) {
@@ -105,10 +103,10 @@ public class IceCreamShop extends JPanel implements ActionListener{
 	    		line.removeRandomOrder();
 	    		//Remove order in the ice cream maker area
 		    	maker.cone.popScoops();
-		    	validate();
-		    	repaint();
 	    	}
 	    }
+	   validate();
+	   repaint();
 	}
 	
 	/**
