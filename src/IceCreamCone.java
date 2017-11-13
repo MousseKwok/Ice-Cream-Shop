@@ -6,7 +6,7 @@ import javax.swing.*;
  *
  */
 @SuppressWarnings("serial")
-public class IceCreamCone extends JComponent {
+public class IceCreamCone {
 
 	//Flavors of the ice cream
 	public static final String[] FLAVORS = {"Valinna", "strawberry", "green tea", "burnt caramel"};
