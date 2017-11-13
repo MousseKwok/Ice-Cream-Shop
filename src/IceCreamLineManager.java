@@ -67,15 +67,13 @@ public class IceCreamLineManager extends JPanel implements ActionListener {
 			//Add a random order
 			line.addRandomOrder();
 			//Refresh display
-			validate();
-			repaint();
 		}
 		
 		else if(src == serveButton) {
 			//Remove the current order and get the next order
 			line.removeRandomOrder();
-			validate();
-			repaint();
 		}
+                validate();
+                repaint();
 	}
 }
