@@ -48,7 +48,7 @@ public class IceCreamMaker extends JPanel implements ActionListener
 		for(int i = 0; i < flavorBtns.length; i++) {
 			flavorBtns[i] = new JButton(IceCreamCone.FLAVORS[i]);
 			flavorBtns[i].setBackground(IceCreamConeView.PAINT_COLORS[i]);
-            flavorBtns[i].setOpaque(true);
+			flavorBtns[i].setOpaque(true);
 			flavorBtns[i].setBorderPainted(false);
 			flavorPanel.add(flavorBtns[i]);
 			flavorBtns[i].addActionListener(this);
