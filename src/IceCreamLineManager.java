@@ -19,8 +19,8 @@ public class IceCreamLineManager extends JPanel implements ActionListener {
 		super(new BorderLayout());
 		//Add the panel holding two buttons
 		addControls();
-        line = new IceCreamLine();
-        add(line, BorderLayout.CENTER);
+		line = new IceCreamLine();
+		add(line, BorderLayout.CENTER);
         
 	}
 	
@@ -41,7 +41,7 @@ public class IceCreamLineManager extends JPanel implements ActionListener {
 	 */
 	private JButton createNewOrderButton() {
 		orderButton = new JButton("Add a random order");
-        orderButton.setAlignmentX(CENTER_ALIGNMENT);
+		orderButton.setAlignmentX(CENTER_ALIGNMENT);
 		orderButton.addActionListener(this);
 		return orderButton;
 	}
