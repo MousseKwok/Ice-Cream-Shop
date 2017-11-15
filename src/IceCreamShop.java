@@ -64,9 +64,9 @@ public class IceCreamShop extends JPanel implements ActionListener{
 		
 		JPanel panel = new JPanel();
 		panel.add(stringPanel);
-        panel.add(scorePanel);
-        panel.add(buttonPanel);
-        panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
+		panel.add(scorePanel);
+		panel.add(buttonPanel);
+		panel.setLayout(new BoxLayout(panel, BoxLayout.Y_AXIS));
 		return panel;
 	}
 	
