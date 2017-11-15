@@ -37,7 +37,7 @@ public class IceCreamConeView extends JComponent{
 	public void paint(Graphics g) {
 		//Paint the ice cream cone and ice cream scoops
 		paintCone(g);
-        paintScoops(g);
+		paintScoops(g);
 	}
 	
 	/**
